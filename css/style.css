@@ -150,3 +150,19 @@ main .playstation5 .my_btn {
     background-color: var(--blue);
     border: 0;
 }
+
+.it-takes-two .itt {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+.it-takes-two .logo-img {
+    width: 50%;
+}
+
+.it-takes-two .my_btn {
+    background-color: var(--orange-btn);
+}
