@@ -130,6 +130,10 @@ header .my_btn {
     footer .footer .footer-link {
         margin-top: 4rem;
     }
+
+    footer .footer .footer-bottom {
+        margin-top: 4rem;
+    }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -225,7 +229,6 @@ h3.regular {
     border-radius: 1.5em;
 }
 
-
 .explore-playstation4 .container-thumb .my_btn {
     background-color: var(--blue);
     border: 0;
@@ -261,17 +264,17 @@ h3.regular {
     border: 0;
 }
 
+
 .social-media img {
     height: 130px;
 }
-
 
 footer .footer {
     background-color: var(--footer-bg);
     padding-top: 7rem;
     padding-bottom: 7rem;
     color: var(--white);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 footer .footer .footer-top img {
@@ -284,7 +287,9 @@ footer .footer a {
 
 footer .footer li {
     list-style-type: none;
+}
 
-
+footer .footer-bottom img {
+    width: 170px;
 }
 
