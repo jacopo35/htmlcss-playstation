@@ -1,6 +1,12 @@
 :root {
-    --nav-top-bg: #000000;
+    --black: #000000;
+    --white: #ffffff;
     --nav-btn-bg: #363636;
+    --orange-btn: #CD3D0F;
+    --light-blue: #176DCC;
+    --blue: #2D64E6;
+    --grey-text: #727272;
+    --grey-bg: #1F1F1F;
 }
 
 a,
@@ -24,39 +30,33 @@ header .nav-top svg {
     height: 15px;
 }
 
-header .nav-bottom {
-    height: 70px;
+header .navbar-bottom ul.my_dropdown_menu a>img {
+    height: 3rem;
 }
 
-header img.lens {
+header li a>img.lens {
     height: 25px;
 }
 
-header .navbar li a>img {
-    height: 10px;
-}
-
-header .nav-bottom .my_btn {
-    font-size: 1.5rem;
+header .my_btn {
     background-color: var(--nav-btn-bg);
 }
 
-.navbar-light .navbar-nav .nav-link.my_nav {
-    color: var(--black);
-}
 .navbar-light .navbar-nav ul.my_dropdown_menu {
     border: 0;
     margin-top: -1px;
 }
 
+.navbar-light .navbar-nav .nav-link.my_nav {
+    color: var(--black);
+}
 
 .navbar-light .navbar-nav .dropdown .dropdown-toggle::after {
     font-family: "Font Awesome 6 Free";
     content: "\f078";
     border: 0;
     font-weight: 900;
-    font-size: 0.8em;
-    
+    font-size: 0.8em;   
 }
 
 .navbar-light .navbar-nav .dropdown .dropdown-toggle.show::after {
@@ -87,7 +87,6 @@ header .nav-bottom .my_btn {
     }
 }
 
-/* Jumbotron */
 .jumbotron .jumbo-top {
     background-image: url(../img/jumbo-bg.png);
     background-size: cover;
@@ -123,8 +122,6 @@ header .nav-bottom .my_btn {
     border-radius: 1.5em;
 }
 
-/* Main */
-
 main .grey {
     color: var(--grey-text);
 }
@@ -137,18 +134,36 @@ main .blue {
     color: var(--light-blue);
 }
 
-main h2.my_h2 {
+h2.my_h2 {
     font-size: 2.5rem;
     line-height: 1;
 }
 
-main h3.my_h3 {
+h3.my_h3 {
     font-size: 2.5rem;
 }
 
 main .playstation5 .my_btn {
     background-color: var(--blue);
     border: 0;
+}
+
+main .playstation5 .mb3em {
+    margin-bottom: 3em;
+}
+
+main .playstation5 .container-thumb {
+    height: 100%;
+    filter: opacity(0.5);
+}
+
+main .playstation5 .container-thumb.active {
+    border-bottom: 2px solid var(--light-blue);
+    filter: opacity(1);
+}
+
+main img.w-70 {
+    width: 70%;
 }
 
 .it-takes-two .itt {
@@ -165,4 +180,29 @@ main .playstation5 .my_btn {
 
 .it-takes-two .my_btn {
     background-color: var(--orange-btn);
+}
+
+.new-releases .nr {
+    background-color: var(--grey-bg);
+    color: var(--white);
+}
+
+h3.regular {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.new-releases .nr .nr-thumb-container {
+    border-radius: 1.5em;
+}
+
+.new-releases .nr .nr-thumb-container img {
+    width: 100%;
+    border-radius: 1.5em;
+}
+
+.explore-playstation4 .container-thumb .my_btn {
+    background-color: var(--blue);
+    border: 0;
+    width: 120px;
 }
