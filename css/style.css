@@ -9,6 +9,10 @@
     --grey-bg: #1F1F1F;
     --ps-plus-bg: #BEBCBB;
     --ps-plus-btn: #D9DADC;
+    --ps-now-bg: #161C3B;
+    --ps-now-btn: #F5F5F5;
+    --footer-bg: #00439C;
+
 }
 
 html {
@@ -98,7 +102,6 @@ header .my_btn {
 .jumbotron .jumbo-bottom .thumb-container {
     border-radius: 1.5em;
     border: 1px solid var(--white);
-    padding: 0.2rem;
 }
 
 .jumbotron .jumbo-bottom .bordered-blue {
@@ -108,8 +111,8 @@ header .my_btn {
 .jumbotron .jumbo-bottom .thumb-container img {
     width: 100%;
     border-radius: 1.5em;
+    padding: 0.25rem;
 }
-
 
 @media screen and (max-width: 991.98px) {
     .navbar-collapse .navbar-nav .nav-item .my_search_button {
@@ -123,6 +126,10 @@ header .my_btn {
         width: 50%;
         padding: 0.3em;
     }
+
+    footer .footer .footer-link {
+        margin-top: 4rem;
+    }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -130,6 +137,13 @@ header .my_btn {
         padding: 3rem 0;
     }
     
+}
+
+@media screen and (max-width: 575.98px) {
+    .social-media img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 main .grey {
@@ -211,6 +225,7 @@ h3.regular {
     border-radius: 1.5em;
 }
 
+
 .explore-playstation4 .container-thumb .my_btn {
     background-color: var(--blue);
     border: 0;
@@ -229,5 +244,47 @@ h3.regular {
     background-color: var(--ps-plus-btn);
     color: var(--blue);
     border: 0;
+}
+
+.playstation-now .logo-img {
+    width: 50%;
+}
+
+.playstation-now .play-now {
+    background-color: var(--ps-now-bg);
+    color: var(--white);
+}
+
+.playstation-now .play-now .my_btn {
+    background-color: var(--ps-now-btn);
+    color: var(--black);
+    border: 0;
+}
+
+.social-media img {
+    height: 130px;
+}
+
+
+footer .footer {
+    background-color: var(--footer-bg);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+footer .footer .footer-top img {
+    width: 120px;
+}
+
+footer .footer a {
+    color: var(--white);
+}
+
+footer .footer li {
+    list-style-type: none;
+
+
 }
 
